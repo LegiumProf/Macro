@@ -1,0 +1,98 @@
+h1,
+h2,
+h3,
+h4,
+body {
+  margin: 0;
+}
+
+h1 {
+  font-weight: 700;
+  line-height: 113%;
+  font-family: "Manrope", sans-serif;
+}
+@media (min-width: 1025px) {
+  h1 {
+    font-size: 96px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1280px) {
+  h1 {
+    font-size: calc(64px + 32 * (100vw - 768px) / 512);
+  }
+}
+@media (max-width: 767px) {
+  h1 {
+    font-size: calc(36px + 28 * (100vw - 375px) / 392);
+  }
+}
+
+h2 {
+  font-weight: 600;
+  line-height: 113%;
+  font-family: "Manrope", sans-serif;
+}
+@media (min-width: 1025px) {
+  h2 {
+    font-size: 64px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  h2 {
+    font-size: calc(48px + 16 * (100vw - 768px) / 256);
+  }
+}
+@media (max-width: 767px) {
+  h2 {
+    font-size: calc(32px + 16 * (100vw - 375px) / 392);
+  }
+}
+
+h3 {
+  font-weight: 600;
+  line-height: 113%;
+  font-family: "Manrope", sans-serif;
+}
+@media (min-width: 1025px) {
+  h3 {
+    font-size: 24px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  h3 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 767px) {
+  h3 {
+    font-size: 24px;
+  }
+}
+
+h4 {
+  font-weight: 500;
+  line-height: 113%;
+  font-family: "Manrope", sans-serif;
+}
+@media (min-width: 1025px) {
+  h4 {
+    font-size: 18px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  h4 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  h4 {
+    font-size: calc(20px - 2 * (100vw - 375px) / 392);
+  }
+}
+
+body {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: normal;
+}/*# sourceMappingURL=typography.css.map */

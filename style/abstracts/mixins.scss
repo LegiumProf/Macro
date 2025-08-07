@@ -1,0 +1,136 @@
+@use "../abstracts/variables.scss" as var;
+
+@mixin flex-row {
+  display: flex;
+}
+
+@mixin flex-row--spacebetween {
+  display: flex;
+  justify-content: space-between;
+}
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+@mixin flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin section {
+  width: calc(100% - 160px);
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    width: calc(100% - 128px);
+  }
+  @media (min-width: 375px) and (max-width: 1024px) {
+    width: calc(100% - 32px);
+  }
+}
+@mixin section--row {
+  width: calc(100% - 160px);
+  display: flex;
+  flex-direction: column;
+  align-items: normal;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 190px;
+  gap: 42px;
+
+  @media (min-width: 768px) and (max-width: 1280px) {
+    width: calc(100% - 128px);
+  }
+  @media (min-width: 375px) and (max-width: 1024px) {
+    width: calc(100% - 32px);
+  }
+  @media (min-width: 375px) and (max-width: 768px) {
+    margin-top: 96px;
+  }
+}
+@mixin section__number {
+  position: absolute;
+  top: -190px;
+  left: -144px;
+  font-size: 380px;
+  font-weight: 600;
+  color: var.$lightGray-color;
+  z-index: -1;
+
+  @media (min-width: 375px) and (max-width: 1024px) {
+    font-size: 240px;
+    left: -64px;
+    top: -100px;
+  }
+
+  p {
+    margin: 0;
+    line-height: 113%;
+  }
+}
+
+@mixin section__content {
+  @include flex-column;
+  gap: 24px;
+
+  .heading {
+    @include flex-column;
+    gap: 16px;
+  }
+
+  .desc {
+    p {
+      margin: 0 0 64px 0;
+      max-width: 580px;
+
+      @media (min-width: 375px) and (max-width: 1280px) {
+        margin: 0 0 32px 0;
+      }
+    }
+  }
+}
+
+@mixin section__content--row {
+  @include flex-row--spacebetween;
+  gap: 24px;
+
+  @media (min-width: 375px) and (max-width: 1280px) {
+    @include flex-column;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .heading {
+    @include flex-column;
+    gap: 24px;
+  }
+
+  .desc {
+    @include flex-column;
+    gap: 24px;
+    justify-content: center;
+
+    p {
+      margin: 0;
+      max-width: 580px;
+    }
+    a {
+      @include flex-row;
+      gap: 16px;
+      text-decoration: none;
+      color: var.$black-color;
+      align-items: center;
+
+      p {
+        width: auto;
+        margin: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@use "../abstracts/variables.scss" as var;
+@use "../abstracts/mixins.scss" as mix;
+
+.button {
+  background-color: var.$primary-color;
+  color: var.$backgroundBlack-color;
+  text-decoration: none;
+  display: inline-block;
+  padding: 16px 24px;
+  border-radius: 16px;
+  font-weight: 500;
+  height: 57px;
+  box-sizing: border-box;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  max-width: max-content;
+
+  &:hover {
+    background-color: var.$portage-color;
+  }
+  &:active {
+    transform: scale(0.95);
+  }
+}

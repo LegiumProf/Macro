@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
+    />
+    <meta name="description" content="" />
+
+    <title>Macro</title>
+
+    <link rel="icon" href="./img/favicon.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./style/main.css" />
+
+    <script src="./script/script.js" defer></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <nav>
+        <div class="nav__logo">
+          <img src="./img/Logo.svg" alt="Логотип" />
+          <p>Macro</p>
+        </div>
+        <div class="nav__menu">
+          <ul class="nav__menu-list">
+            <li class="nav__menu-item">
+              <a href="#" data-scroll="#features">Особенности</a>
+            </li>
+            <li class="nav__menu-item">
+              <a href="#" data-scroll="#aboutUs">О нас</a>
+            </li>
+            <li class="nav__menu-item">
+              <a href="#" data-scroll="#partners">Партнёры</a>
+            </li>
+            <li class="nav__menu-item">
+              <a href="#" data-scroll="#strategy">FAQ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav__buttons">
+          <a
+            href="#"
+            onclick="event.preventDefault()"
+            class="button button--start"
+            >Начать</a
+          >
+          <a
+            href="#"
+            onclick="event.preventDefault()"
+            class="button button--menu"
+            ><svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3 7H21"
+                stroke="#171717"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <path
+                d="M3 12H21"
+                stroke="#171717"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <path
+                d="M3 17H21"
+                stroke="#171717"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="nav__burgerMenu">
+          <a
+            href="#"
+            onclick="event.preventDefault()"
+            class="button button--close"
+            ><svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16.2427 7.75732L7.75739 16.2426"
+                stroke="#171717"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M7.75739 7.75739L16.2427 16.2427"
+                stroke="#171717"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+          <ul>
+            <li class="nav__menu-item">
+              <a href="#" data-scroll="#features">Особенности</a>
+            </li>
+            <li class="nav__menu-item">
+              <a href="#" data-scroll="#aboutUs">О нас</a>
+            </li>
+            <li class="nav__menu-item">
+              <a href="#" data-scroll="#partners">Партнёры</a>
+            </li>
+            <li class="nav__menu-item">
+              <a href="#" data-scroll="#strategy">FAQ</a>
+            </li>
+            <a href="#" onclick="event.preventDefault()" class="button"
+              >Начать</a
+            >
+          </ul>
+        </div>
+      </nav>
+      <main>
+        <section class="hero">
+          <div class="hero__content">
+            <h1>
+              Управляйте личными <br />
+              финансами легко <br />и удобно
+            </h1>
+            <p>
+              Управляйте личными финансами с лёгкостью — просматривайте все
+              счета в одном месте и получайте аналитические данные, чтобы
+              принимать обоснованные финансовые решения.
+            </p>
+          </div>
+          <div class="hero__actions">
+            <a href="#" onclick="event.preventDefault()" class="button"
+              >Оцифровать сейчас</a
+            >
+            <div class="hero__info">
+              <div class="hero__info-item hero__info-item--first">
+                <div class="hero__info-img">
+                  <img src="./img/Ellipse 8.png" alt="" aria-hidden="true" />
+                  <img src="./img/Ellipse 9.png" alt="" aria-hidden="true" />
+                  <img src="./img/Ellipse 10.png" alt="" aria-hidden="true" />
+                </div>
+                <p>10 М</p>
+              </div>
+              <div class="hero__info-item hero__info-item--second">
+                <p>Активных пользователей по всему миру</p>
+              </div>
+            </div>
+          </div>
+          <div class="hero__background">
+            <img src="./img/Cards.png" alt="" />
+          </div>
+        </section>
+
+        <div class="marquee__container">
+          <div class="marquee__gradient-container">
+            <div class="marquee__gradient marquee__gradient-1"></div>
+            <div class="marquee__gradient marquee__gradient-2"></div>
+          </div>
+
+          <div class="marquee marquee--1">
+            <p>О НАС</p>
+            <svg
+              width="61"
+              height="61"
+              viewBox="0 0 61 61"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M30.5 0L38.7378 22.2622L61 30.5L38.7378 38.7378L30.5 61L22.2622 38.7378L0 30.5L22.2622 22.2622L30.5 0Z"
+                fill="#8E7FF0"
+              />
+            </svg>
+            <p>О НАС</p>
+            <svg
+              width="61"
+              height="61"
+              viewBox="0 0 61 61"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M30.5 0L38.7378 22.2622L61 30.5L38.7378 38.7378L30.5 61L22.2622 38.7378L0 30.5L22.2622 22.2622L30.5 0Z"
+                fill="#8E7FF0"
+              />
+            </svg>
+            <p>О НАС</p>
+            <svg
+              width="61"
+              height="61"
+              viewBox="0 0 61 61"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M30.5 0L38.7378 22.2622L61 30.5L38.7378 38.7378L30.5 61L22.2622 38.7378L0 30.5L22.2622 22.2622L30.5 0Z"
+                fill="#8E7FF0"
+              />
+            </svg>
+            <p>О НАС</p>
+            <svg
+              width="61"
+              height="61"
+              viewBox="0 0 61 61"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M30.5 0L38.7378 22.2622L61 30.5L38.7378 38.7378L30.5 61L22.2622 38.7378L0 30.5L22.2622 22.2622L30.5 0Z"
+                fill="#8E7FF0"
+              />
+            </svg>
+            <p>О НАС</p>
+            <svg
+              width="61"
+              height="61"
+              viewBox="0 0 61 61"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M30.5 0L38.7378 22.2622L61 30.5L38.7378 38.7378L30.5 61L22.2622 38.7378L0 30.5L22.2622 22.2622L30.5 0Z"
+                fill="#8E7FF0"
+              />
+            </svg>
+            <p>О НАС</p>
+            <svg
+              width="61"
+              height="61"
+              viewBox="0 0 61 61"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M30.5 0L38.7378 22.2622L61 30.5L38.7378 38.7378L30.5 61L22.2622 38.7378L0 30.5L22.2622 22.2622L30.5 0Z"
+                fill="#8E7FF0"
+              />
+            </svg>
+          </div>
+          <div class="marquee marquee--2">
+            <p>О НАС</p>
+            <svg
+              width="61"
+              height="61"
+              viewBox="0 0 61 61"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M30.5 0L38.7378 22.2622L61 30.5L38.7378 38.7378L30.5 61L22.2622 38.7378L0 30.5L22.2622 22.2622L30.5 0Z"
+                fill="#8E7FF0"
+              />
+            </svg>
+            <p>О НАС</p>
+            <svg
+              width="61"
+              height="61"
+              viewBox="0 0 61 61"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M30.5 0L38.7378 22.2622L61 30.5L38.7378 38.7378L30.5 61L22.2622 38.7378L0 30.5L22.2622 22.2622L30.5 0Z"
+                fill="#8E7FF0"
+              />
+            </svg>
+            <p>О НАС</p>
+            <svg
+              width="61"
+              height="61"
+              viewBox="0 0 61 61"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M30.5 0L38.7378 22.2622L61 30.5L38.7378 38.7378L30.5 61L22.2622 38.7378L0 30.5L22.2622 22.2622L30.5 0Z"
+                fill="#8E7FF0"
+              />
+            </svg>
+            <p>О НАС</p>
+            <svg
+              width="61"
+              height="61"
+              viewBox="0 0 61 61"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M30.5 0L38.7378 22.2622L61 30.5L38.7378 38.7378L30.5 61L22.2622 38.7378L0 30.5L22.2622 22.2622L30.5 0Z"
+                fill="#8E7FF0"
+              />
+            </svg>
+            <p>О НАС</p>
+            <svg
+              width="61"
+              height="61"
+              viewBox="0 0 61 61"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M30.5 0L38.7378 22.2622L61 30.5L38.7378 38.7378L30.5 61L22.2622 38.7378L0 30.5L22.2622 22.2622L30.5 0Z"
+                fill="#8E7FF0"
+              />
+            </svg>
+            <p>О НАС</p>
+            <svg
+              width="61"
+              height="61"
+              viewBox="0 0 61 61"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M30.5 0L38.7378 22.2622L61 30.5L38.7378 38.7378L30.5 61L22.2622 38.7378L0 30.5L22.2622 22.2622L30.5 0Z"
+                fill="#8E7FF0"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <section class="features" id="features">
+          <div class="features__number">
+            <p>01</p>
+          </div>
+          <div class="features__content">
+            <div class="heading">
+              <h3>Особенности</h3>
+              <h2>Главные <br />преимущества</h2>
+            </div>
+            <div class="desc">
+              <p>
+                Почему бухгалтерия кажется такой сложной? Потому что управление
+                личными финансами — это не только бухгалтерский учёт, но ещё и
+                организация всех расходов и доходов. Этот инструмент позволяет
+                быстро настроить личный бюджет и отслеживать ежедневные траты и
+                поступления.
+              </p>
+              <a href="#" onclick="event.preventDefault()" class="button"
+                >Оцифровать сейчас</a
+              >
+            </div>
+          </div>
+          <div class="features__grid">
+            <div class="feature feature--1">
+              <h4>Защита</h4>
+              <svg
+                class="featureSvg--1"
+                width="65"
+                height="65"
+                viewBox="0 0 65 65"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M28.4104 6.03887L14.8958 11.1305C11.7812 12.2951 9.23535 15.9785 9.23535 19.2826V39.4055C9.23535 42.6014 11.3479 46.7993 13.9208 48.7222L25.5666 57.416C29.3854 60.2868 35.6687 60.2868 39.4874 57.416L51.1333 48.7222C53.7062 46.7993 55.8187 42.6014 55.8187 39.4055V19.2826C55.8187 15.9514 53.2729 12.268 50.1583 11.1035L36.6437 6.03887C34.3416 5.19928 30.6583 5.19928 28.4104 6.03887Z"
+                  stroke="#D9D9D9"
+                  stroke-width="1.65254"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <p>
+                Ваши данные и финансы под надёжной защитой. Используем
+                проверенные методы безопасности
+              </p>
+            </div>
+            <div class="feature feature--2">
+              <h4>Отслеживание</h4>
+              <svg
+                class="featureSvg--2"
+                width="64"
+                height="64"
+                viewBox="0 0 64 64"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.33301 5.33301V50.6663C5.33301 55.093 8.90634 58.6663 13.333 58.6663H58.6663"
+                  stroke="#D9D9D9"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M13.333 45.3337L25.573 31.0404C27.5997 28.6937 31.1997 28.5337 33.3863 30.747L35.9197 33.2804C38.1063 35.467 41.7063 35.3336 43.733 32.987L55.9997 18.667"
+                  stroke="#D9D9D9"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+
+              <p>
+                Контролируйте расходы и доходы в реальном времени. Знайте, куда
+                уходит каждый рубль.
+              </p>
+            </div>
+            <div class="feature feature--3">
+              <h4>Гибкость</h4>
+              <svg
+                class="featureSvg--3"
+                width="65"
+                height="65"
+                viewBox="0 0 65 65"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M40.8086 23.8955L40.8887 24.1113L41.1045 24.1914L63.5586 32.5L41.1045 40.8086L40.8887 40.8887L40.8086 41.1045L32.5 63.5586L24.1914 41.1045L24.1113 40.8887L23.8955 40.8086L1.44043 32.5L23.8955 24.1914L24.1113 24.1113L24.1914 23.8955L32.5 1.44043L40.8086 23.8955Z"
+                  stroke="#D9D9D9"
+                />
+              </svg>
+
+              <p>
+                Настраивайте категории, бюджеты и цели под себя. Управляйте
+                деньгами так, как удобно вам.
+              </p>
+            </div>
+            <div class="feature feature--4">
+              <h4>Простота</h4>
+              <svg
+                class="featureSvg--4"
+                width="65"
+                height="65"
+                viewBox="0 0 65 65"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M34.1795 56.3601C33.2587 56.6851 31.742 56.6851 30.8212 56.3601C22.967 53.6788 5.41699 42.4934 5.41699 23.5351C5.41699 15.1663 12.1607 8.39551 20.4753 8.39551C25.4045 8.39551 29.7649 10.7788 32.5003 14.4622C35.2357 10.7788 39.6232 8.39551 44.5253 8.39551C52.8399 8.39551 59.5837 15.1663 59.5837 23.5351C59.5837 42.4934 42.0337 53.6788 34.1795 56.3601Z"
+                  stroke="#D9D9D9"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+
+              <p>
+                Интуитивно понятный интерфейс и лёгкий старт. Без сложностей и
+                лишних шагов.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="aboutUs" id="aboutUs">
+          <div class="aboutUs__number">
+            <p>02</p>
+          </div>
+          <div class="aboutUs__content">
+            <div class="heading">
+              <h3>О нас</h3>
+              <h2>Узнайте больше <br />о Macro</h2>
+            </div>
+            <div class="desc">
+              <p>
+                Macro — это инструмент для простого и эффективного управления
+                личными финансами. От отслеживания расходов до создания бюджета
+                — всё в одном приложении. Подходит как новичкам, так и тем, кто
+                хочет больше контроля над своими деньгами.
+              </p>
+              <a href="#" onclick="event.preventDefault()">
+                <p>Начать</p>
+                <svg
+                  width="98"
+                  height="15"
+                  viewBox="0 0 98 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M97.7071 8.20711C98.0976 7.81658 98.0976 7.18342 97.7071 6.79289L91.3431 0.428932C90.9526 0.0384078 90.3195 0.0384078 89.9289 0.428932C89.5384 0.819457 89.5384 1.45262 89.9289 1.84315L95.5858 7.5L89.9289 13.1569C89.5384 13.5474 89.5384 14.1805 89.9289 14.5711C90.3195 14.9616 90.9526 14.9616 91.3431 14.5711L97.7071 8.20711ZM0 7.5V8.5H97V7.5V6.5H0V7.5Z"
+                    fill="#1A1A1A"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="about__info">
+            <div class="about__info-item">
+              <h3>456К</h3>
+              <p>Пользователей Macro <br />со всего мира</p>
+            </div>
+            <div class="about__info-item">
+              <h3>466К</h3>
+              <p>Выручка Macro в первом <br />квартале 2023 года</p>
+            </div>
+            <div class="about__info-item">
+              <h3>256%</h3>
+              <p>Рост инвестиций Macro <br />в 2023 году</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="simpleWay">
+          <div class="simpleWay__content">
+            <div class="heading">
+              <h2>
+                Простой способ <br />
+                управлять деньгами
+              </h2>
+              <div class="simpleWay__number"><p>03</p></div>
+            </div>
+            <div class="desc">
+              <p>
+                Управлять финансами просто и удобно. Планируйте бюджет,
+                отслеживайте доходы и расходы, получайте понятные отчёты. Macro
+                поможет быстро увидеть, куда уходят деньги, и контролировать
+                расходы без лишних сложностей.
+              </p>
+              <a href="#" onclick="event.preventDefault()" class="button"
+                >Оцифровать сейчас</a
+              >
+            </div>
+          </div>
+          <div class="simpleWay__img">
+            <img src="./img/Cards2.png" alt="Изображение карточек Macro" />
+          </div>
+        </section>
+
+        <section class="partners" id="partners">
+          <div class="partners__number">
+            <p>04</p>
+          </div>
+          <div class="partners__content">
+            <div class="heading">
+              <h3>Партнёры</h3>
+              <h2>
+                Познакомьтесь <br />
+                с партнёрами Macro
+              </h2>
+            </div>
+            <div class="desc">
+              <p>
+                Macro сотрудничает с проверенными и авторитетными компаниями,
+                чтобы обеспечить максимальную безопасность и качество сервиса.
+                Наши партнёры помогают расширять возможности приложения и
+                предоставлять пользователям надёжные финансовые решения.
+              </p>
+            </div>
+          </div>
+          <div class="partner__grid">
+            <div class="partner">
+              <img src="./img/ApplePay.svg" alt="ApplePay логотип" />
+            </div>
+            <div class="partner">
+              <img src="./img/Skrill.svg" alt="Skrill логотип" />
+            </div>
+            <div class="partner">
+              <img src="./img/PayPass.svg" alt="PayPass логотип" />
+            </div>
+            <div class="partner">
+              <img src="./img/AstroPay.svg" alt="AstroPay логотип" />
+            </div>
+            <div class="partner">
+              <img src="./img/VisaDebit.svg" alt="VisaDebit логотип" />
+            </div>
+            <div class="partner">
+              <img src="./img/PayPal.svg" alt="PayPal логотип" />
+            </div>
+            <div class="partner">
+              <img src="./img/GooglePay.svg" alt="GooglePay логотип" />
+            </div>
+            <div class="partner">
+              <img src="./img/Robokassa.svg" alt="Robokassa логотип" />
+            </div>
+            <div class="partner">
+              <img src="./img/Neteller.svg" alt="Neteller логотип" />
+            </div>
+          </div>
+        </section>
+        <section class="strategy" id="strategy">
+          <div class="strategy__number"><p>05</p></div>
+          <div class="strategy__content">
+            <div class="heading">
+              <h3>Стратегия</h3>
+              <h2>Давайте узнает, <br />как работает Macro</h2>
+            </div>
+            <div class="desc">
+              <p>
+                Macro — это простой и удобный инструмент для управления личными
+                финансами. С его помощью вы легко создадите бюджет, отслеживаете
+                расходы и доходы, получаете аналитику и советы для эффективного
+                планирования. Всё продумано так, чтобы сделать финансовое
+                управление понятным и доступным каждому.
+              </p>
+            </div>
+          </div>
+
+          <video controls poster="./img/placeholder.png" width="100%">
+            <source src="" type="video/mp4" />
+            Ваш браузер не поддерживает видео.
+          </video>
+        </section>
+
+        <section class="download">
+          <div class="download__content">
+            <div class="heading">
+              <h2>Скачайте <br />приложение <br />Macro здесь</h2>
+            </div>
+            <div class="desc">
+              <p>
+                Получите доступ к удобному и безопасному управлению своими
+                финансами — скачайте приложение Macro прямо сейчас. Начните
+                контролировать бюджет, отслеживать расходы и достигать
+                финансовых целей легко и быстро.
+              </p>
+              <div class="download__btns">
+                <a href="#" onclick="event.preventDefault()">
+                  <img src="./img/google-play.svg" alt="Google Play логотип" />
+                  <div class="download__btns-item">
+                    <p>Скачать сейчас</p>
+                    <h3>Google Play</h3>
+                  </div>
+                </a>
+                <a href="#" onclick="event.preventDefault()">
+                  <img src="./img/apple.svg" alt="Apple логотип" />
+                  <div class="download__btns-item">
+                    <p>Скачать сейчас</p>
+                    <h3>Apple Store</h3>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="download__img">
+            <img src="./img/Iphone.png" alt="Телефон с визуализацией оплаты" />
+          </div>
+          <div class="download__background">
+            <img src="./img/background_download.svg" alt="" />
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="heading">
+          <h2>Присоединяйтесь к Macro <br />для управления финансами.</h2>
+          <a href="#" onclick="event.preventDefault()" class="button"
+            >Присоединиться сейчас</a
+          >
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__logo">
+            <img src="./img/Logo.svg" alt="Логотип" />
+            <p>Macro</p>
+          </div>
+          <div class="footer__bottom-container">
+            <a href="#" onclick="event.preventDefault()"
+              >Условия & соглашения</a
+            >
+            <a href="#" onclick="event.preventDefault()"
+              >©2025 Macro All Rights Reserved</a
+            >
+            <a href="#" onclick="event.preventDefault()"
+              >Политика приватности</a
+            >
+          </div>
+        </div>
+
+        <div class="footer__background">
+          <img src="./img/footer__background.svg" alt="" aria-hidden="true" />
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

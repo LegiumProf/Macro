@@ -1,0 +1,23 @@
+.button {
+  background-color: #83ff8f;
+  color: #1a1a1a;
+  text-decoration: none;
+  display: inline-block;
+  padding: 16px 24px;
+  border-radius: 16px;
+  font-weight: 500;
+  height: 57px;
+  box-sizing: border-box;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+.button:hover {
+  background-color: #8e7ff0;
+}
+.button:active {
+  transform: scale(0.95);
+}/*# sourceMappingURL=button.css.map */

@@ -1,0 +1,155 @@
+@use "../abstracts/variables.scss" as var;
+@use "../abstracts/mixins.scss" as mix;
+
+nav {
+  position: absolute;
+  width: 100%;
+  @include mix.flex-row--spacebetween;
+  height: 118px;
+  padding: 0 48px;
+  box-sizing: border-box;
+  align-items: center;
+  margin-top: 16px;
+  z-index: 10;
+
+  @media (min-width: 375px) and (max-width: 768px) {
+    padding: 0 16px;
+  }
+
+  .nav__logo {
+    @include mix.flex-row;
+    align-items: center;
+    gap: 16px;
+
+    img {
+      width: 48px;
+      height: 26px;
+    }
+    p {
+      margin: 0;
+      font-size: 24px;
+      font-weight: 600;
+      color: var.$white-color;
+    }
+  }
+
+  .nav__menu {
+    ul {
+      @include mix.flex-row;
+      gap: 42px;
+      margin: 0;
+      padding: 0;
+
+      @media (min-width: 768px) and (max-width: 1024px) {
+        gap: 24px;
+      }
+      @media (max-width: 768px) {
+        display: none;
+      }
+
+      // .nav__meny-list-closeBtn {
+      //   padding: 16px;
+      //   background-color: var.$primary-color;
+      //   border-radius: 16px;
+      //   box-sizing: border-box;
+      //   display: inline-flex;
+      //   justify-content: center;
+      //   align-items: center;
+      //   max-width: max-content;
+      //   position: absolute;
+      //   right: 16px;
+      //   top: 47px;
+
+      //   @media (min-width: 768px) {
+      //     display: none;
+      //   }
+      // }
+      li {
+        list-style: none;
+
+        a {
+          color: var.$white-color;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .nav__buttons {
+    @include mix.flex-row;
+
+    a {
+      text-decoration: none;
+      gap: 24px;
+    }
+
+    @media (min-width: 768px) {
+      .button--menu {
+        display: none;
+        z-index: 10;
+      }
+    }
+    @media (max-width: 767px) {
+      .button--menu {
+        padding: 16px;
+      }
+      .button--start {
+        display: none;
+      }
+    }
+  }
+
+  .nav__burgerMenu {
+    // display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: var.$backgroundBlack-color;
+    height: 100vh;
+    padding: 140px 128px 0 64px;
+    transform: translateX(355px);
+    transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
+
+    opacity: 0;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+
+    .button--close {
+      padding: 16px;
+      position: absolute;
+      right: 16px;
+      top: 48px;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      color: var.$white-color;
+      gap: 24px;
+      padding: 0;
+      margin: 0;
+
+      li {
+        list-style: none;
+
+        font-size: 24px;
+        font-weight: 600;
+
+        a {
+          text-decoration: none;
+          color: var.$white-color;
+        }
+      }
+
+      & > :last-child {
+        margin-top: 20px;
+      }
+    }
+  }
+  .active {
+    transform: translateX(0);
+    opacity: 100;
+  }
+}

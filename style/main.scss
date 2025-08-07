@@ -1,0 +1,29 @@
+// Абстрактные зависимости
+@use "./abstracts/variables.scss" as var;
+@use "./abstracts/mixins.scss" as mix;
+
+// Базовые стили
+@use "./base/normalize.css";
+@use "./base/typography.scss" as typ;
+
+// Макет и структура
+@use "./layout/header.scss";
+@use "./layout/footer.scss";
+
+// Страницы
+@use "./pages/sections.scss";
+// Компоненты
+@use "./components/button.scss";
+
+body {
+  margin: 0;
+}
+main {
+  @include mix.flex-column-center;
+}
+.wrap {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+}

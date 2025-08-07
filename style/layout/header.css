@@ -1,0 +1,122 @@
+nav {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 118px;
+  padding: 0 48px;
+  box-sizing: border-box;
+  align-items: center;
+  margin-top: 16px;
+  z-index: 10;
+}
+@media (min-width: 375px) and (max-width: 768px) {
+  nav {
+    padding: 0 16px;
+  }
+}
+nav .nav__logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+nav .nav__logo img {
+  width: 48px;
+  height: 26px;
+}
+nav .nav__logo p {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+}
+nav .nav__menu ul {
+  display: flex;
+  gap: 42px;
+  margin: 0;
+  padding: 0;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  nav .nav__menu ul {
+    gap: 24px;
+  }
+}
+@media (max-width: 768px) {
+  nav .nav__menu ul {
+    display: none;
+  }
+}
+nav .nav__menu ul li {
+  list-style: none;
+}
+nav .nav__menu ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+nav .nav__buttons {
+  display: flex;
+}
+nav .nav__buttons a {
+  text-decoration: none;
+  gap: 24px;
+}
+@media (min-width: 768px) {
+  nav .nav__buttons .button--menu {
+    display: none;
+    z-index: 10;
+  }
+}
+@media (max-width: 767px) {
+  nav .nav__buttons .button--menu {
+    padding: 16px;
+  }
+  nav .nav__buttons .button--start {
+    display: none;
+  }
+}
+nav .nav__burgerMenu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #1a1a1a;
+  height: 100vh;
+  padding: 140px 128px 0 64px;
+  transform: translateX(355px);
+  transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
+  opacity: 0;
+}
+@media (min-width: 768px) {
+  nav .nav__burgerMenu {
+    display: none;
+  }
+}
+nav .nav__burgerMenu .button--close {
+  padding: 16px;
+  position: absolute;
+  right: 16px;
+  top: 48px;
+}
+nav .nav__burgerMenu ul {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  gap: 24px;
+  padding: 0;
+  margin: 0;
+}
+nav .nav__burgerMenu ul li {
+  list-style: none;
+  font-size: 24px;
+  font-weight: 600;
+}
+nav .nav__burgerMenu ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+nav .nav__burgerMenu ul > :last-child {
+  margin-top: 20px;
+}
+nav .active {
+  transform: translateX(0);
+  opacity: 100;
+}/*# sourceMappingURL=header.css.map */
